@@ -8,8 +8,8 @@ app.listen(3000, function() {
   });
 
 
-app.delete('/deleteUser', (req, res, next) => {
+app.delete('/deleteUser', (req, res) => {
     const user = req.body.deleteUser
-    res.send(`Usuário "${user}" Deletado`)
+    res.send(`Usuário Deletado`)
 
 });
